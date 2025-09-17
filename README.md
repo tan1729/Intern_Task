@@ -43,7 +43,7 @@ This platform aims to revolutionize online learning by:
 - HTML, CSS, JavaScript
 
 ### Backend
-- Python (Flask framework)
+- Python 
 
 ### Key Integrations
 - YouTube API for video retrieval and metadata
