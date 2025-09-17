@@ -71,24 +71,12 @@ This platform aims to revolutionize online learning by:
 6. Interact with the AI assistant for additional help
 7. Stay motivated with inspirational quotes
 
-## Screenshots
 
-### Landing Page
-![Landing Screenshot](images/1.png)
+# Project Documentation
 
-### Videos
-![Video Screenshot](images/2.png)
-
-### 
-![Landing Screenshot](images/3.png)
-
-###
-![Video Screenshot](images/4.png)
-
-###
-![Landing Screenshot](images/5.png)
-
-
+You can view the full report here:  
+[Open Report (Google Drive)](https://drive.google.com/file/d/1aBcDeFGhIJklmNOPqrStUVwxYZ/view?usp=sharing)
+it has all the images and the workflow video of the project
 
 
 ## API Keys Required
