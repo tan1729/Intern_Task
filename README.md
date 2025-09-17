@@ -61,7 +61,8 @@ This platform aims to revolutionize online learning by:
 # Project Documentation
 
 You can view the full report here:  
-[Open Report (Google Drive)](https://drive.google.com/file/d/1aBcDeFGhIJklmNOPqrStUVwxYZ/view?usp=sharing](https://drive.google.com/drive/folders/1dfw5zp_ecFLU2NmlQNLtdu0HI12FfBUf?usp=sharing)
+[Open Report (Google Drive)](https://drive.google.com/drive/folders/1dfw5zp_ecFLU2NmlQNLtdu0HI12FfBUf?usp=sharing)
+
 it has all the images and the workflow video of the project
 
 
