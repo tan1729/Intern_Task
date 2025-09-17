@@ -11,9 +11,9 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # API Keys and Endpoints
-GROQ_API_KEY = "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"  # Use secrets in production
+GROQ_API_KEY = "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"  # Use your API Keys
 GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
-YOUTUBE_API_KEY = "AIzaSyCxFXcJ76MesUkwlRxBoIX15qGLF0ILljA"  # Use secrets in production
+YOUTUBE_API_KEY = "AIzaSyCxFXcJ76MesUkwlRxBoIX15qGLF0ILljA"  # UUse your API Keys
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 YOUTUBE_VIDEO_STATS_URL = "https://www.googleapis.com/youtube/v3/videos"
 YOUTUBE_COMMENTS_URL = "https://www.googleapis.com/youtube/v3/commentThreads"
