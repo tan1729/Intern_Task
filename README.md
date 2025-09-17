@@ -71,6 +71,26 @@ This platform aims to revolutionize online learning by:
 6. Interact with the AI assistant for additional help
 7. Stay motivated with inspirational quotes
 
+## Screenshots
+
+### Landing Page
+![Landing Screenshot](images/1.png)
+
+### Videos
+![Video Screenshot](images/2.png)
+
+### 
+![Landing Screenshot](images/3.png)
+
+###
+![Video Screenshot](images/4.png)
+
+###
+![Landing Screenshot](images/5.png)
+
+
+
+
 ## API Keys Required
 
 - YouTube Data API
