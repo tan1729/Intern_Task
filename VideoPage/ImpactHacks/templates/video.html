@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ video_title }} - YouTube Study Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="hero-section">
+      <h1>{{ video_title }}</h1>
+      <a href="http://127.0.0.1:7870" style="color: var(--primary-color); text-decoration: none; font-size: 1rem;">← Back to Search</a>
+    </div>
+    <div class="content-section">
+      <!-- Video section -->
+      <div class="video-section">
+        <div id="video-container">
+          <iframe src="https://www.youtube.com/embed/{{ video_id }}" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Summary section removed as per user request -->
+
+      <!-- Transcript section -->
+      <!--
+      <div class="tool-card" id="transcript-section">
+        <h2>📜 Transcript</h2>
+        <div class="transcript-container">
+          <pre id="transcript">{{ transcript }}</pre>
+        </div>
+      </div>
+      -->
+
+      <!-- Notes section -->
+      <div class="tool-card" id="notes-section">
+        <h2>📝 Study Notes</h2>
+        <textarea id="notes" placeholder="Write your notes here..."></textarea>
+        <button id="download-notes">Download Notes</button>
+      </div>
+
+      <script>
+        const notesArea = document.getElementById("notes");
+        const downloadBtn = document.getElementById("download-notes");
+
+        function downloadNotes() {
+          const notes = notesArea.value.trim();
+          if (!notes) {
+            alert("Your notes are empty! Please write something.");
+            return;
+          }
+
+          const blob = new Blob([notes], { type: "text/plain" });
+          const url = URL.createObjectURL(blob);
+
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = "My_Notes.txt";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+
+          URL.revokeObjectURL(url);
+        }
+
+        downloadBtn.addEventListener("click", downloadNotes);
+      </script>
+
+      <style>
+        /* Notes Section Overrides */
+        #notes-section textarea {
+          width: 100%;
+          height: 150px;
+          padding: 0.8rem;
+          font-size: 0.95rem;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          resize: vertical;
+          margin-top: 0.8rem;
+          margin-bottom: 1rem;
+          font-family: inherit;
+        }
+
+        #notes-section button {
+          padding: 0.6rem 1rem;
+          border: none;
+          background: #4caf50;
+          color: white;
+          font-weight: 600;
+          border-radius: 8px;
+          cursor: pointer;
+          align-self: flex-start;
+          transition: background 0.3s ease;
+        }
+
+        #notes-section button:hover {
+          background: #45a049;
+        }
+      </style>
+
+      <!-- Quote section -->
+      <div class="tool-card" id="quote-section">
+        <h2>💡 Today's Inspiration</h2>
+        <blockquote>"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</blockquote>
+        <p id="motivation-quote"></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>

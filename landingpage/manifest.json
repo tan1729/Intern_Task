@@ -1,0 +1,10 @@
+{
+  "name": "Student4Students",
+  "short_name": "S4S",
+  "description": "Personalized learning platform with AI-powered video recommendations",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#496580",
+  "icons": []
+}
