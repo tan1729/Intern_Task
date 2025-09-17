@@ -1,6 +1,6 @@
 # Students4Students
 
-An innovative learning platform that leverages AI to provide personalized educational resources, multilingual support, and enhanced learning experiences.
+An innovative learning platform that leverages AI to provide personalized educational resources, and enhanced learning experiences.
 
 ## Overview
 
