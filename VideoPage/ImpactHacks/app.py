@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # YouTube API details
-API_KEY = "AIzaSyCxFXcJ76MesUkwlRxBoIX15qGLF0ILljA"
+API_KEY = "AIzaSyCxFXcJ76MesUkwlRxBoIX15qGLF0ILljA"  #Use your API Keys
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 YOUTUBE_VIDEO_STATS_URL = "https://www.googleapis.com/youtube/v3/videos"
 
