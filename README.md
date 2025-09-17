@@ -96,10 +96,3 @@ This platform aims to revolutionize online learning by:
 - YouTube Data API
 - Groq API (for LLM integration)
 
-## Link for landing page on HuggingFace Spaces
-https://huggingface.co/spaces/delta-praticle/ImpactHacks
-
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
